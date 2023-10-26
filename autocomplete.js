@@ -272,7 +272,17 @@ const autoCompleteInputTag =
 const resultComTagtainer =
   document.getElementsByClassName("resultContainer")[0];
 
+let filteredProducts = [];
+
 autoCompleteInputTag.addEventListener("keyup", (event) => {
+  if (
+    event.key === "ArrowDown" ||
+    event.key === "ArrowUp" ||
+    event.key === "Enter"
+  ) {
+    navigateAndSelectProduct(event.key);
+    return;
+  }
   resultComTagtainer.innerHTML = "";
   const searchText = event.target.value.toLowerCase();
   if (searchText.length === 0) {
@@ -301,3 +311,13 @@ autoCompleteInputTag.addEventListener("keyup", (event) => {
     }
   }
 });
+
+let indexToSelect = -1;
+const navigateAndSelectProduct = (key) => {
+  if (key === "ArrowDown") {
+    indexToSelect++;
+    const productIdToSelect = filteredProducts[indexToSelect].id.tostring();
+  } else if (key === "ArrowUp") {
+  } else {
+  }
+};
