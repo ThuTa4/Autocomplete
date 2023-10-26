@@ -1,0 +1,36 @@
+body {
+  background-color: #343a34;
+}
+
+.container {
+  margin-top: 100px;
+  max-width: 550px;
+}
+
+.autoCompleteInput {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.resultContainer {
+  background-color: #fff;
+}
+
+.productItemComtainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+}
+
+.productName {
+  font-size: 14px;
+  width: 80%;
+}
+
+.productImage {
+  height: 80%;
+}
