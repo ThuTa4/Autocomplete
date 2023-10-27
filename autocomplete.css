@@ -16,6 +16,10 @@ body {
   background-color: #fff;
 }
 
+.enteredTag {
+  background-color: #fff;
+}
+
 .productItemComtainer {
   display: flex;
   flex-direction: row;
