@@ -4,7 +4,12 @@ const sliderTag = document.querySelector(".slider");
 const tabs = ["home", "services", "about us", "contact us", "login"];
 
 const handleTagChange = (event) => {
-  console.log(event.target.id);
+  const clickedTagId = event.target.id;
+  const clickedLiTag = document.getElementById(clickedTagId);
+  const clickedLiTagWidth = clickedLiTag.offsetWidth;
+  const clickedLiTagoffsetleft = clickedLiTag.offsetLeft;
+  sliderTag.style.width = clickedLiTagWidth + "px";
+  sliderTag.style.transform = `translateX(${clickedLiTagoffsetleft}px)`;
 };
 for (let i = 0; i < tabs.length; i++) {
   const liTag = document.createElement("li");
