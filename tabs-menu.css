@@ -1,0 +1,29 @@
+body {
+  background-color: #3d405b;
+}
+
+.container {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #da4353;
+  padding: 10px 20px;
+  user-select: none;
+}
+
+.slider {
+  width: 200px;
+  height: 5px;
+  background-color: #46cfb0;
+}
