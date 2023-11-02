@@ -31,3 +31,30 @@ li {
   background-color: #46cfb0;
   transition: all 0.4s ease-in-out;
 }
+
+.menuContainer {
+  width: 100vw;
+  height: 755px;
+  overflow: hidden;
+
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: auto;
+  border-radius: 60px;
+}
