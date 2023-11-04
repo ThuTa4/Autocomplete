@@ -1,0 +1,20 @@
+body {
+  background-color: #343a34;
+  color: #fff;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  width: 100%;
+  height: 200px;
+  background-color: lightblue;
+  position: fixed;
+  bottom: 0px;
+}
