@@ -14,12 +14,14 @@ body {
 .parent {
   width: 100%;
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   display: flex;
   justify-content: center;
 }
 
 .toastAlert {
+  position: relative;
   background-color: #28a745;
   padding: 10px;
+  transition: top 0.4s ease-in-out;
 }
