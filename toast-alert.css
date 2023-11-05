@@ -13,8 +13,13 @@ body {
 
 .parent {
   width: 100%;
-  height: 200px;
-  background-color: lightblue;
   position: fixed;
   bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.toastAlert {
+  background-color: #28a745;
+  padding: 10px;
 }
