@@ -24,6 +24,7 @@ const openToastAlert = () => {
   }, 100);
 
   closeButtonTag.addEventListener("click", () => {
+    localStorage.setItem("accepted", "1");
     parentTag.style.bottom = `-${parentTag.offsetHeight}px`;
   });
 };
