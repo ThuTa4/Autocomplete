@@ -24,14 +24,10 @@ const openToastAlert = () => {
   }, 100);
 
   closeButtonTag.addEventListener("click", () => {
-    localStorage.setItem("accepted", "1");
     parentTag.style.bottom = `-${parentTag.offsetHeight}px`;
   });
 };
 
 window.addEventListener("load", () => {
-  const accepted = localStorage.getItem("accepted");
-  if (accepted !== "1") {
-    openToastAlert();
-  }
+  openToastAlert();
 });
