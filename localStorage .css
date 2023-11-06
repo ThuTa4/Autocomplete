@@ -1,0 +1,31 @@
+body {
+  background-color: #3d405b;
+  color: #fff;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.parent {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: #28a745;
+  transition: bottom 0.4s ease-in-out;
+}
+
+.toastAlertContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.toastAlertText {
+  margin-right: 10px;
+}
