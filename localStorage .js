@@ -35,7 +35,3 @@ window.addEventListener("load", () => {
     openToastAlert();
   }
 });
-
-const jsObj = { comment: "This is test comment" };
-const convertedJSONStrring = JSON.stringify(jsObj);
-console.log(convertedJSONStrring);
