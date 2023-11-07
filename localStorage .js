@@ -30,5 +30,12 @@ const openToastAlert = () => {
 };
 
 window.addEventListener("load", () => {
-  openToastAlert();
+  const accepted = localStorage.getItem("accepted"); // "1"
+  if (accepted !== "1") {
+    openToastAlert();
+  }
 });
+
+const jsObj = { comment: "This is test comment" };
+const convertedJSONStrring = JSON.stringify(jsObj);
+console.log(convertedJSONStrring);
