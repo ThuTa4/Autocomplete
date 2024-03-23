@@ -42,6 +42,7 @@ autoCompleteInputTag.addEventListener("keyup", (event) => {
   filteredProducts = products.filter((product) => {
     return product.title.toLowerCase().includes(searchText);
   });
+  
   const hasProductsToShow = filteredProducts.length > 0;
   if (hasProductsToShow) {
     for (let i = 0; i < filteredProducts.length; i++) {

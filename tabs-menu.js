@@ -24,6 +24,7 @@ const handleTagChange = (event) => {
   const imageTagTag = document.getElementById(imageTagSrc);
   imageTag.add(imageTagTag);
 };
+
 for (let i = 0; i < tabs.length; i++) {
   const liTag = document.createElement("li");
   const imageTagContainer = document.createElement("img");
