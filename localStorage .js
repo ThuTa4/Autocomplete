@@ -30,7 +30,7 @@ const openToastAlert = () => {
 };
 
 window.addEventListener("load", () => {
-  const accepted = localStorage.getItem("accepted"); // "1"
+  const accepted = localStorage.getItem("accepted");
   if (accepted !== "1") {
     openToastAlert();
   }

@@ -75,7 +75,7 @@ const entering = () => {
   resultTagComtainer.remove(autoCompleteInputTag);
 };
 
-let indexToSelect = -1;
+let indexToSelect = -1; // main
 const navigateAndSelectProduct = (key) => {
   if (key === "ArrowDown") {
     if (indexToSelect === filteredProducts.length - 1) {
